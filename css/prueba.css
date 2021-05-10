@@ -1,0 +1,217 @@
+.texto__tamano {
+  margin-top: 2px;
+  padding: 24px;
+  text-align: center;
+  font-size: 18px; }
+
+.parrafo .parrafo__encabezado {
+  text-align: center; }
+
+.parrafo .parrafo__tamano {
+  font-size: 18px; }
+
+/*BUCLES*/
+.parrafo--1 {
+  margin-top: 2px; }
+
+.parrafo--2 {
+  margin-top: 4px; }
+
+/*EACH*/
+.photoimg1--photo {
+  background-image: url("img/img1.jpg"); }
+
+.photoimg2--photo {
+  background-image: url("img/img2.jpg"); }
+
+.photoimg3--photo {
+  background-image: url("img/img3.jpg"); }
+
+/*MAP*/
+/*FORMULARIO*/
+/*GALERIA BOOTSTRAP*/
+.gallery-block__titulo {
+  text-align: center;
+  font-size: 27px; }
+
+.gallery-block {
+  padding-bottom: 60px;
+  padding-top: 60px; }
+  .gallery-block .gallery-block__div2 {
+    margin-bottom: 50px;
+    text-align: center; }
+    .gallery-block .gallery-block__div2 .h2 {
+      font-weight: bold;
+      font-size: 1.4rem;
+      text-transform: uppercase; }
+
+.gallery-block .cards-gallery a {
+  color: #212529; }
+
+.gallery-block .cards-gallery .card {
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.4s easy; }
+  .gallery-block .cards-gallery .card body {
+    text-align: center; }
+    .gallery-block .cards-gallery .card body p {
+      font-size: 15px; }
+  .gallery-block .cards-gallery .card img {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); }
+
+.gallery-block .cards-gallery h6 {
+  font-size: 17px;
+  font-weight: bold; }
+
+.gallery-block.cards-gallery a:hover {
+  text-decoration: none; }
+
+@media (min-width: 576px) {
+  .gallery-block .transform-on-hover:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; } }
+
+div h6 {
+  text-align: center; }
+
+/*FOOTER*/
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #26393a;
+  height: auto;
+  width: 100vw;
+  font-family: "Open Sans";
+  padding-top: 0px;
+  color: #fff; }
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+.footer__titulo {
+  padding: 20px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem; }
+
+.footer__informacion {
+  max-width: 500px;
+  margin: 19px auto;
+  line-height: 28px;
+  font-size: 14px; }
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0; }
+  .socials li {
+    margin: 0 10px; }
+  .socials a {
+    text-decoration: none; }
+    .socials a i {
+      font-size: 1.1rem;
+      transition: color .4s ease; }
+
+.socials a:hover i {
+  color: aqua; }
+
+.footer-bottom {
+  background: #1f1c1e;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center; }
+  .footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize; }
+  .footer-bottom span {
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200; }
+
+/*CAROUSEL*/
+div p {
+  text-align: center;
+  padding: 17px; }
+
+div img {
+  width: 100%;
+  height: 100%; }
+
+.carousel__titulo {
+  text-align: center;
+  font-size: 26px;
+  color: #00ccff; }
+
+/*GALERIA*/
+.item {
+  transition: 0.05s ease-in-out; }
+
+.item:hover {
+  filter: brightness(80%); }
+
+/*MENU*/
+.menu {
+  display: table; }
+
+.menu__nav {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
+
+.menu__ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.menu__li {
+  display: inline-block;
+  padding: 0 10px; }
+
+.menu__li--efectos {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  padding: 8px 0px;
+  text-decoration: none;
+  color: #050205; }
+
+.menu__li--efectos:hover {
+  color: #000000;
+  text-decoration: none; }
+
+.menu__li--efectos:before,
+.menu__li--efectos:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  background: #000000; }
+
+.menu__li--efectos:before {
+  left: 0; }
+
+.menu__li--efectos:after {
+  right: 0;
+  background: #000000;
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); }
+
+.menu__li--efectos:hover:before {
+  background: rgba(0, 0, 0, 0.993);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
+
+.menu__li--efectos:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s; }
