@@ -1,0 +1,11 @@
+$tiempo: .15s/3;
+
+
+
+
+.item {
+    transition: $tiempo ease-in-out;
+}
+.item:hover {
+    filter: brightness(80%);
+}
