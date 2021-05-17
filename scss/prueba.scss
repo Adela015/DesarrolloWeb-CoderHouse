@@ -2,13 +2,6 @@ $tamano: 48px/2;
 $alineacion: center;
 $parrafot: 18px;
 $margen: 2px;
-<<<<<<< HEAD
-$color: white;
-$fondo: white;
-$fondoColor: white;
-=======
-
->>>>>>> 11c7e7c (inicio de proyecto)
 
 
 
@@ -18,7 +11,12 @@ $fondoColor: white;
     text-align: $alineacion; 
     font-size: $parrafot;
 }
-<<<<<<< HEAD
+.neon {
+    text-align: center;
+    color: #02f8f8;
+    font-size: 34px;
+}
+
 .parrafo{
     .parrafo__encabezado{
         text-align: $alineacion
@@ -28,45 +26,8 @@ $fondoColor: white;
     }
 }
 
-/*BUCLES*/
-@for $margen from 1 to 3 {
-    .parrafo--#{$margen} { margin-top: 2px * $margen; }
-}
-/*EACH*/
-@each $fondoz in img1 img2 img3 {
-    .photo#{$fondoz}--photo {
-        background-image: url('img/#{$fondoz}.jpg')
-    }   
-}
-/*MAP*/
-$fondocolor: ( 
-    fondo1: rgb(255, 255, 255),
-    fondo2: rgb(255, 236, 236),
-    fondo3: rgb(255, 244, 244),
-);
-@each $fondo, $color in $fondoColor {
-    .parrafo#{$fondo} {
-        background-color: $color;
-    }
-=======
-
-.parrafo__encabezado{
-    text-align: $alineacion;
-    color: aqua;
-}
-.parrafo__tamano{
-    font-size: $parrafot;
->>>>>>> 11c7e7c (inicio de proyecto)
-}
 
 
-
-<<<<<<< HEAD
-/*FORMULARIO*/
-@import "formulario";
-=======
-
->>>>>>> 11c7e7c (inicio de proyecto)
 /*GALERIA BOOTSTRAP*/
 @import "galeriabootstrap";
 /*FOOTER*/
@@ -77,12 +38,5 @@ $fondocolor: (
 @import "galeria";
 /*MENU*/
 @import "menu";
-<<<<<<< HEAD
-=======
 /*LINEA DE TIEMPO*/
 @import "lineadetiempo";
-
->>>>>>> 11c7e7c (inicio de proyecto)
-
-
-
