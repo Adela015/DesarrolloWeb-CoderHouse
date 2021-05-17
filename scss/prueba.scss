@@ -2,9 +2,13 @@ $tamano: 48px/2;
 $alineacion: center;
 $parrafot: 18px;
 $margen: 2px;
+<<<<<<< HEAD
 $color: white;
 $fondo: white;
 $fondoColor: white;
+=======
+
+>>>>>>> 11c7e7c (inicio de proyecto)
 
 
 
@@ -14,6 +18,7 @@ $fondoColor: white;
     text-align: $alineacion; 
     font-size: $parrafot;
 }
+<<<<<<< HEAD
 .parrafo{
     .parrafo__encabezado{
         text-align: $alineacion
@@ -43,12 +48,25 @@ $fondocolor: (
     .parrafo#{$fondo} {
         background-color: $color;
     }
+=======
+
+.parrafo__encabezado{
+    text-align: $alineacion;
+    color: aqua;
+}
+.parrafo__tamano{
+    font-size: $parrafot;
+>>>>>>> 11c7e7c (inicio de proyecto)
 }
 
 
 
+<<<<<<< HEAD
 /*FORMULARIO*/
 @import "formulario";
+=======
+
+>>>>>>> 11c7e7c (inicio de proyecto)
 /*GALERIA BOOTSTRAP*/
 @import "galeriabootstrap";
 /*FOOTER*/
@@ -59,6 +77,12 @@ $fondocolor: (
 @import "galeria";
 /*MENU*/
 @import "menu";
+<<<<<<< HEAD
+=======
+/*LINEA DE TIEMPO*/
+@import "lineadetiempo";
+
+>>>>>>> 11c7e7c (inicio de proyecto)
 
 
 

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 $tamanos: 26px;
+=======
+>>>>>>> 11c7e7c (inicio de proyecto)
 $alinear: center;
 
 div {
@@ -11,8 +14,17 @@ div {
         height: 100%;
     }
 }
+<<<<<<< HEAD
 .carousel__titulo {
     text-align: $alinear;
     font-size: ($tamanos+26)/2;
     color: rgb(0, 204, 255);
 }
+=======
+.neon {
+    text-align: center;
+    font-size: 38px;
+    color: rgb(91, 255, 200);
+    
+}
+>>>>>>> 11c7e7c (inicio de proyecto)
