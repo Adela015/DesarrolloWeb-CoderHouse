@@ -5,8 +5,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/prueba.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/prueba.css">
+
 
 <!--------------------------------------------------------------SEO-------------------------------------------------------------------->
 <meta name="description"
@@ -17,24 +24,32 @@
 </head>
 
 <body>
+
 <!----------------------------------------------------------Barra de menú---------------------------------------------------------------------->
 
-<div class="menu">
-<div class="menu">
-    <nav class="menu__nav">
-    <ul class="menu__ul">
-        <li class="menu__li"><a class="menu__li--efectos" href="index.html">Inicio</a></li>
-        <li class="menu__li"><a class="menu__li--efectos" href="historia.html">Historia Musical</a></li>
-        <li class="menu__li"><a class="menu__li--efectos" href="material.html">Discografía</a></li>
-        <li class="menu__li"><a class="menu__li--efectos" href="fotos.html">Galería</a></li>
-        <li class="menu__li"><a class="menu__li--efectos" href="tours.html">Viajes</a></li>
+<nav>
+    <ul>
+        <li class="logo">SHINee Tours</li>
+        <li class="items"><a href="index.html">Inicio</a></li>
+        <li class="items"><a href="historia.html">Historia Músical</a></li>
+        <li class="items"><a href="fotos.html">Galería</a></li>
+        <li class="items"><a href="tours.html">Viajes</a></li>
+        <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
     </ul>
-    </nav>
-</div>
+</nav>
 
-<!-------------------------------------------------Carrusel de imágenes--------------------------------------------------->
+<script>
+    $(document).ready(function(){
+        $('.btn').click(function(){
+        $('.items').toggleClass("show");
+        $('ul li').toggleClass("hide");
+        });
+    });
+</script>
+
+
+<!-----------------------------------------------------------------CAROUSEL------------------------------------------------------->
 <div id="demo" class="carousel slide" data-ride="carousel">
-    <h1 class="neon" data-text="SHINee Tours">SHINee Tours</h1>
     <ul class="carousel-indicators">
         <li data-target="#demo" data-slide-to="0" class="active"></li>
         <li data-target="#demo" data-slide-to="1"></li>
@@ -59,7 +74,7 @@
         <img src="img/concierto2.jpg" alt="New York" width="1100" height="500">
         <div class="carousel-caption">
         <h3>2014</h3>
-        <p>Tokio Dome</p>
+        <p>SHINee World III</p>
     </div>   
     </div>
     </div>
@@ -71,12 +86,70 @@
     </a>
     </div>
 
-    
-<!---------------------------------------------------Párrafo de inicio---------------------------------------------------->
-<div class="tamano"></div>
-    <p class="texto__tamano">Somos una empresa de viajes con más de 10 años de experiencia. Nuestro objetivo es hacer tus sueños realidad, llevandote a un concierto de SHINee y conocer Asia </p>
+    <h2 class="texto__tamano">Somos una empresa de tours con más de 7 años de experiencia en la indusctria. Nuestro deber es hacer realidad tus sueños y llevarte a un tour por toda Asia con parada final a Corea del Sur y presenciar un concierto de SHINee </h2>
+<!------------------------------------------------------------OPINIONES---------------------------------------------------------->
+<div class="wrapper">
+    <div class="box">
+    <i class="fas fa-quote-left quote"></i>
+    <p>La experiencia que tuve con SHINee Tours, fue la mejor. El viaje fue divertido, informativo y tiene buenos precios.</p>
+    <div class="content">
+        <div class="info">
+        <div class="name">Alex Férnandez</div>
+        <div class="job">Estudiante | Universitario</div>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
+        <div class="image">
+            <img src="img/perfil3.jpg" alt="">
+        </div>
+    </div>
+    </div>
+    <div class="box">
+        <i class="fas fa-quote-left  quote"></i>
+        <p>Por fin logré ir a un concierto de SHINee. Me divertí mucho, pero me gustaría que haya más visitas guiadas durante la estadía</p>
+        <div class="content">
+            <div class="info">
+            <div class="name">Jessica Gonzales</div>
+            <div class="job">Youtuber | Nutricionista</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            </div>
+            <div class="image">
+                <img src="img/perfil2.jpg" alt="">
+            </div>
+        </div>
+        </div>
+    <div class="box">
+    <i class="fas fa-quote-left  quote"></i>
+    <p>Logré conocer muchos países de Asia, gracias. Era uno de mis sueños y por fin pude cumplirlo</p>
+    <div class="content">
+        <div class="info">
+        <div class="name">Kristina Bellis</div>
+        <div class="job">Freelancer | Emprendedora</div>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        </div>
+        <div class="image">
+            <img src="img/perfil1.jpg" alt="">
+        </div>
+    </div>
+    </div>
 </div>
-
 
 <!----------------------------------------------------------FOOTER------------------------------------------------------------------>
 <footer>
@@ -139,10 +212,10 @@
     </div>
     </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 </body>
 </html>

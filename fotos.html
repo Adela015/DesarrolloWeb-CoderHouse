@@ -6,8 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
-<link rel="stylesheet" href="css/prueba.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="css/prueba.css">
+
 
 
 <!--------------------------------------------------------------SEO-------------------------------------------------------------------->
@@ -21,18 +22,24 @@
 
 <body>
 <!----------------------------------------------------------Barra de menú---------------------------------------------------------------------->
-
-<div class="menu">
-    <nav class="menu__nav">
-    <ul class="menu__ul">
-        <li class="menu__li"><a class="menu__li--efectos" href="index.html">Inicio</a></li>
-        <li class="menu__li"><a class="menu__li--efectos" href="historia.html">Historia Musical</a></li>
-        <li class="menu__li"><a class="menu__li--efectos" href="material.html">Discografía</a></li>
-        <li class="menu__li"><a class="menu__li--efectos" href="fotos.html">Galería</a></li>
-        <li class="menu__li"><a class="menu__li--efectos" href="tours.html">Viajes</a></li>
+<nav>
+    <ul>
+        <li class="logo">SHINee Tours</li>
+        <li class="items"><a href="index.html">Inicio</a></li>
+        <li class="items"><a href="historia.html">Historia Músical</a></li>
+        <li class="items"><a href="fotos.html">Galería</a></li>
+        <li class="items"><a href="tours.html">Viajes</a></li>
+        <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
     </ul>
-    </nav>
-</div>
+</nav>
+<script>
+    $(document).ready(function(){
+        $('.btn').click(function(){
+        $('.items').toggleClass("show");
+        $('ul li').toggleClass("hide");
+        });
+    });
+</script>
 <!---------------------------------------------------------------------Galeria de fotos--------------------------------------------------------->
     <div class="container-fluid">
         <div class="row mt-4">
